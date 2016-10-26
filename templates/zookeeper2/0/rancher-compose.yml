@@ -7,3 +7,6 @@ zookeeper:
       required: true
       default: 3
       type: "int"
+zookeeper:
+  scale: ${zk_scale}
+  retain_ip: true
