@@ -1,5 +1,5 @@
 .catalog:
-  name: Zookeeper2
+  name: Zookeeper
   version: 1.0
   description: |
     (Experimental) Apache Zookeeper cluster.
