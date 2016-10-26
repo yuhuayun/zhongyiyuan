@@ -6,4 +6,3 @@ zookeeper:
   log_opt: {}
   image: ah.youruncloud.com/catalog/zookeeper:v1.0.0
   stdin_open: true
-
