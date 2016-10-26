@@ -1,0 +1,12 @@
+gitlab:
+  ports:
+  - 8081:80/tcp
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: hostname=host1
+  hostname: ${gitlab_hostname}
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/catalog/gitlab-ce
+  stdin_open: true
