@@ -1,6 +1,6 @@
 gitlab:
   ports:
-  - 8081:80/tcp
+  - ${public_port}:80/tcp
   log_driver: ''
   labels:
     io.rancher.container.pull_image: always
