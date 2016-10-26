@@ -1,2 +1,8 @@
+questions:
+    - variable: "host_labe"
+      label: "Host label to Deploy This Catalog"
+      required: true
+      default: "hostname=host1"
+      type: "string"
 gitlab:
   scale: 1

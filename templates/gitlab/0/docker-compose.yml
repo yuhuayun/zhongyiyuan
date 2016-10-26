@@ -4,7 +4,7 @@ gitlab:
   log_driver: ''
   labels:
     io.rancher.container.pull_image: always
-    io.rancher.scheduler.affinity:host_label: hostname=host1
+    io.rancher.scheduler.affinity:host_label: ${host_labe}
   hostname: ${gitlab_hostname}
   tty: true
   log_opt: {}
