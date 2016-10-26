@@ -6,11 +6,7 @@ gitlab:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: ${host_labe}
   volumes:
-  - /srv/gitlab/config:/etc/gitlab
-  - /srv/gitlab/logs:/var/log/gitlab
-  - /srv/gitlab/reconfigure:/var/log/gitlab/reconfigure
-  - /srv/gitlab/data:/var/opt/gitlab
-  - /etc/localtime:/etc/localtime
+  - ${volumes_work}:/etc/gitlab
   hostname: ${gitlab_hostname}
   tty: true
   log_opt: {}
