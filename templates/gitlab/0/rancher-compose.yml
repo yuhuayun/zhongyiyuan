@@ -1,4 +1,8 @@
 .catalog:
+  name: gitlab
+  version: 1.0.0
+  description: |
+    CI base of gitlab
   questions:
     - variable: "host_labe"
       label: "Host label to Deploy This Catalog"
