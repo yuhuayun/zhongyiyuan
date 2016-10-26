@@ -1,9 +1,2 @@
-questions:
-    - variable: "gitlab_hostname"
-      description: "Gitlab hostname"
-      label: "Hostname:"
-      required: true
-      default: "git.example.com"
-      type: "string"
 gitlab:
   scale: 1
