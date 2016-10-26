@@ -1,4 +1,5 @@
-questions:
+.catalog:
+  questions:
     - variable: "host_labe"
       label: "Host label to Deploy This Catalog"
       required: true
