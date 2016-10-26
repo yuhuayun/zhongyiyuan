@@ -15,8 +15,7 @@
       required: true
       default: "80"
       type: "int"
-  questions:
-      - variable: volumes_work
+    - variable: volumes_work
       required: true
       default: "/srv/gitlab/config"
 gitlab:
