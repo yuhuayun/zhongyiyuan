@@ -1,9 +1,9 @@
 .catalog:
   name: Zookeeper
-  version: 3.4.8-rancher1
+  version: 1.0
   description: |
     (Experimental) Apache Zookeeper cluster.
-  minimum_rancher_version: v0.59.0
+  minimum_rancher_version: v1.0
   maintainer: "Raul Sanchez <rawmind@gmail.com>"
   uuid: zk-0
   questions:
