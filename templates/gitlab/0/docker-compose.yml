@@ -6,7 +6,11 @@ gitlab:
     io.rancher.container.pull_image: always
     io.rancher.scheduler.affinity:host_label: ${host_labe}
   volumes:
-  - ${volumes_work}:/etc/gitlab
+  - ${volumes_work1}
+  - ${volumes_work2}
+  - ${volumes_work3}
+  - ${volumes_work4}
+  - ${volumes_work5}
   hostname: ${gitlab_hostname}
   tty: true
   log_opt: {}
