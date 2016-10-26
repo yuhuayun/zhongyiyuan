@@ -1,4 +1,10 @@
 .catalog:
+  name: Zookeeper2
+  version: 1.0
+  description: |
+    (Experimental) Apache Zookeeper cluster.
+  minimum_rancher_version: v1.0
+  maintainer: "Raul Sanchez <rawmind@gmail.com>"
   questions:
     - variable: "zk_scale"
       description: "Number of zk nodes. Note: Recommended an odd number"
