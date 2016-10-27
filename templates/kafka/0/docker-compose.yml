@@ -1,0 +1,21 @@
+etcd:
+  log_driver: ''
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/catalog/etcd:v1.0.0
+  stdin_open: true
+kafka:
+  ports:
+  - 2181:2181/tcp
+  - 9092:9092/tcp
+  - 2888:2888/tcp
+  - 3888:3888/tcp
+  log_driver: ''
+  labels:
+    io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/catalog/kafka:v1.0.0
+  links:
+  - etcd:etcd
+  stdin_open: true
