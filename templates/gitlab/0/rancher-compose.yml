@@ -23,17 +23,17 @@
       required: true
       default: "/srv/gitlab/logs:/var/log/gitlab"
       type: "string"
-#   - variable: volumes_work3
-#      required: true
-#      default: "/srv/gitlab/reconfigure:/var/log/gitlab/reconfigure"
-#      type: "string"
-#   - variable: volumes_work4
-#     required: true
-#     default: "/srv/gitlab/data:/var/opt/gitlab"
-#     type: "string"
-#  - variable: volumes_work5
-#     required: true
-#     default: "/etc/localtime:/etc/localtime"
-#     type: "string"
+    - variable: volumes_work3
+      required: true
+      default: "/srv/gitlab/reconfigure:/var/log/gitlab/reconfigure"
+      type: "string"
+    - variable: volumes_work4
+      required: true
+      default: "/srv/gitlab/data:/var/opt/gitlab"
+      type: "string"
+    - variable: volumes_work5
+      required: true
+      default: "/etc/localtime:/etc/localtime"
+      type: "string"
 gitlab:
   scale: 1
