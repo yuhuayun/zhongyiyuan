@@ -1,0 +1,26 @@
+kerberos:
+  ports:
+   - ${KDC_port1}:88/tcp
+   - ${KDC_port1}:88/udp
+   - ${KDC_port2}:464/tcp
+   - ${KDC_port2}:464/udp
+   - ${KDC_port3}:749/tcp
+  environment:
+   BOOTSTRAP: '0'
+   REALM: ${KDC_REALM}
+   DOMAIN_REALM: ${KDC_DREALM}
+   KERB_MASTER_KEY: ${KDC_MKEY}
+   KERB_ADMIN_USER: ${KDC_USER}
+   KERB_ADMIN_PASS: ${KDC_PWD}
+   SEARCH_DOMAINS: ${KDC_SDOMAIN}
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: ${host_label}
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/pub/kerberos:latest
+  volumes:
+  - /etc/krb5.conf:/etc/krb5.conf
+  - /dev/urandom:/dev/random
+  stdin_open: true

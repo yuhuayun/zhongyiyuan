@@ -9,13 +9,13 @@ gitlab:
   - /srv/gitlab/logs:/var/log/gitlab
   - /srv/gitlab/reconfigure:/var/log/gitlab/reconfigure
   - /etc/localtime:/etc/localtime
-  - ${volumes_work1}
-  - ${volumes_work4}
+  - ${volumes_work1}:/etc/gitlab
+  - ${volumes_work4}:/var/opt/gitlab
 #  - ${volumes_work3}
 #  - ${volumes_work2}
 #  - ${volumes_work5}
   
-  hostname: ${gitlab_hostname}
+#  hostname: ${host_labe}
   tty: true
   log_opt: {}
   image: ah.youruncloud.com/catalog/gitlab-ce

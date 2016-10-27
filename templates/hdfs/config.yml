@@ -1,0 +1,5 @@
+name: HDFS
+description: |
+  (Experimental) hadoop  cluster for HDFS.
+version: latest
+category: Big Data

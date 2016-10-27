@@ -1,6 +1,4 @@
-# GitLab CE
-
-GitLab CE is a free alternative to GitHub
+# Kafka cluster
 
 ### 声明：
 

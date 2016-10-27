@@ -1,6 +1,6 @@
 .catalog:
   name: gitlab
-  version: 1.0.0
+  version: v1.0.0
   description: |
     CI base of gitlab
   questions:
@@ -19,7 +19,7 @@
       description: "Gitlab working directory"
       label: "Path_Work:"
       required: true
-      default: "/srv/gitlab/config:/etc/gitlab"
+      default: "/srv/gitlab/config"
       type: "string"
 #    - variable: volumes_work2
 #      required: true
@@ -33,7 +33,7 @@
       description: "Gitlab data storage directory"
       label: "Path_Data"
       required: true
-      default: "/srv/gitlab/data:/var/opt/gitlab"
+      default: "/srv/gitlab/data"
       type: "string"
 #    - variable: volumes_work5
 #      required: true

@@ -1,0 +1,5 @@
+name: kerberos
+description: |
+  (Experimental) hadoop  cluster for kerberos KDC.
+version: latest
+category: Big Data

@@ -1,0 +1,69 @@
+.catalog:
+  name: kerberos
+  version: latest
+  description: |
+    (Experimental) hadoop cluster kerberos fo network authentication protocol.
+  questions:
+    - variable: "KDC_port1"
+      description: "kerberos KDC port1"
+      label: "kerberos KDC port1"
+      required: true
+      default: 88
+      type: "int"
+    - variable: "KDC_port2"
+      description: "kerberos KDC port2"
+      label: "kerberos KDC port2"
+      required: true
+      default: 464
+      type: "int"
+    - variable: "KDC_port3"
+      description: "kerberos admin server port"
+      label: "kerberos admin server port"
+      required: true
+      default: 749
+      type: "int"
+    - variable: "host_lable"
+      description: "The kerberos run host label."
+      label: "host lable"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+    - variable: "KDC_REALM"
+      description: "The kerberos realm."
+      label: "kerberos realm."
+      required: true
+      default: "NODE.DC1.CONSUL"
+      type: "string"
+    - variable: "KDC_DREALM"
+      description: "The DNS domain for the realm."
+      label: "kerberos Domain realm."
+      required: true
+      default: "node.dc.consul"
+      type: "string"
+    - variable: "KDC_MKEY"
+      description: "The master key for the KDC."
+      label: "kerberos KERB_MASTER_KEY."
+      required: true
+      default: "masterkey"
+      type: "string"
+    - variable: "KDC_USER"
+      description: "The administrator account name."
+      label: "kerberos administrator account."
+      required: true
+      default: "admin"
+      type: "string" 
+    - variable: "KDC_PWD"
+      description: "The administrator's password."
+      label: "kerberos administrator's password."
+      required: true
+      default: "admin"
+      type: "string"
+    - variable: "KDC_SDOMAIN"
+      description: "The domain suffix search list."
+      label: "kerberos search domains list."
+      required: true
+      default: "search.consul node.dc1.consul"
+      type: "string"
+
+kerberos:
+  scale: 1

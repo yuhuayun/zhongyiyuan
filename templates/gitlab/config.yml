@@ -1,5 +1,5 @@
 name: Gitlab Community
 description: |
-  Gitlab CE is a free GitHub alternative
-version: 8.5.1-0
+  (Experimental) Gitlab CE is a free GitHub alternative
+version: v1.0.0
 category: Versioning

@@ -4,7 +4,7 @@ slaves:
     io.rancher.container.pull_image: always
   tty: true
   log_opt: {}
-  image: ah.youruncloud.com/catalog/spark:v1.0.0
+  image: ah.youruncloud.com/pub/sparkimage:latest
   privileged: true
   stdin_open: true
 master:
@@ -19,7 +19,7 @@ master:
     io.rancher.scheduler.affinity:host_label: ${host_label}
   tty: true
   log_opt: {}
-  image: ah.youruncloud.com/catalog/spark:v1.0.0
+  image:  ah.youruncloud.com/pub/sparkimage:latest
   links:
   - 'slaves:'
   privileged: true

@@ -1,0 +1,25 @@
+HDFS:
+  ports:
+   - ${HDFS_port1}:8020/tcp
+   - ${HDFS_port2}:8022/tcp
+   - ${HDFS_port3}:50070/tcp
+   - ${HDFS_port4}:50090/tcp      
+  environment:
+   CLUSTER_NAME: ${Cluster_name}
+   NNODE1_IP: ${NNode1_IP}
+   NNODE2_IP: ${NNode2_IP}
+   NNODE_ID: ${NNode_ID}
+   JN_IPS: ${JN_IPS}
+   ZK_IPS: ${ZK_IPS}
+  log_driver: ''
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.scheduler.affinity:host_label: ${host_label}
+  tty: true
+  log_opt: {}
+  image: ah.youruncloud.com/pub/hdfs:latest
+  volumes:
+  - /data/hdfs/dn:/data/hdfs/dn
+  - /data/hdfs/journal:/data/hdfs/journal
+  - /data/hdfs/nn:/data/hdfs/nn
+  stdin_open: true

@@ -1,0 +1,74 @@
+.catalog:
+  name: HDFS
+  version: latest
+  description: |
+    (Experimental) Data Science Research Architecture, Data Center OS.
+  questions:
+    - variable: "host_lable"
+      description: "The kerberos run host label."
+      label: "host lable"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+    - variable: "HDFS_port1"
+      description: "HDFS_port1"
+      label: "The HDFS port1"
+      required: true
+      default: 8020
+      type: "int"
+    - variable: "HDFS_port2"
+      description: "HDFS_port2"
+      label: "The HDFS port2"
+      required: true
+      default: 8022
+      type: "int"
+    - variable: "HDFS_port3"
+      description: "HDFS_port3"
+      label: "The HDFS port3"
+      required: true
+      default: 50070
+      type: "int"
+    - variable: "HDFS_port4"
+      description: "HDFS_port4"
+      label: "The HDFS port4"
+      required: true
+      default: 50090
+      type: "int"
+    - variable: "Cluster_name"
+      description: "the HDFS URI default filesystem name"
+      label: "HDFS filesystem name"
+      required: true
+      default: "hadoop"
+      type: "string"
+    - variable: "NNode1_IP"
+      description: "Namenode #1 IP/hostname"
+      label: "IP/Hostname"
+      required: true
+      default: "192.168.5.48"
+      type: "string"
+    - variable: "NNode2_IP"
+      description: "Namenode #2 IP/hostname"
+      label: "IP/hostname"
+      required: true
+      default: "192.168.5.47"
+      type: "string"
+    - variable: "NNode_ID"
+      description: "the id of the particular namenode either: *nn1* or *nn2*"
+      label: "namenode ID"
+      required: true
+      default: "nn1"
+      type: "string"
+    - variable: "JN_IPS"
+      description: "comma separated list of journal node IPS"
+      label: "Journal IPS"
+      required: true
+      default: "192.168.5.48:8485,192.168.5.47:8485,192.168.5.19:8485"
+      type: "string"
+    - variable: "ZK_IPS"
+      description: "comma separated list of zookeeper IPS"
+      label: "zookeeper IPS"
+      required: true
+      default: "192.168.5.48:2181,192.168.5.47:2181,192.168.5.19:2181"
+      type: "string"
+HDFS:
+  scale: 1
