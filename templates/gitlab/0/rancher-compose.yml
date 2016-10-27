@@ -19,10 +19,10 @@
       required: true
       default: "/srv/gitlab/config:/etc/gitlab"
       type: "string"
-#   - variable: volumes_work2
-#     required: true
-#     default: "/srv/gitlab/logs:/var/log/gitlab"
-#     type: "string"
+    - variable: volumes_work2
+      required: true
+      default: "/srv/gitlab/logs:/var/log/gitlab"
+      type: "string"
 #   - variable: volumes_work3
 #      required: true
 #      default: "/srv/gitlab/reconfigure:/var/log/gitlab/reconfigure"
