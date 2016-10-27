@@ -1,6 +1,6 @@
 .catalog:
   name: Zookeeper
-  version: 3.4.8-rancher
+  version: 1.0
   description: |
     (Experimental) Apache Zookeeper cluster.
   minimum_rancher_version: v0.59.0
