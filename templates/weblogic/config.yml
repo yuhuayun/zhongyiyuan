@@ -1,0 +1,5 @@
+name: Icshop 
+description: |
+  Oracle WebLogic 12g with your application deployed.
+version: 2.6
+category: Middleware
