@@ -3,6 +3,6 @@ description: |
   (Experimental) Kettle
 version: v1.0.0
 category: Clustering
-maintainer: "zhipeng.hui@cloudsoar.com"
+maintainer: "Raul Sanchez <rawmind@gmail.com>"
 minimum_rancher_version: v0.59.0
 license:

@@ -1,3 +1,27 @@
+.catalog:
+  name: kettle 
+  version: v1.0.0
+  description: |
+    (Experimental) Spark cluster
+  questions:
+    - variable: "host_label1"
+      description: "Please input slave host name"
+      label: "Host_Slave:"
+      required: true
+      default: "hostname=host1"
+      type: "string"
+    - variable: "host_label2" 
+      description: "Please input master host name" 
+      label: "Host_Master:"
+      required: true
+      default: "hostname=host2"
+      type: "string"
+    - variable: "public_port"
+      description: "Please input kettle port"
+      label: "Kettle_Port:"
+      required: true
+      default: 8081
+      type: "int"
 slave:
   scale: 1
 master:
