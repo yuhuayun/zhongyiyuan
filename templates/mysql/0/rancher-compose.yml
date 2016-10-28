@@ -1,0 +1,20 @@
+.catalog:
+  name: mysql 
+  version: v1.0.0
+  description: |
+    (Experimental) Mysql cluster
+  questions:
+    - variable: "public_port"
+      description: "Please input mysql port"
+      label: "Kettle_Port:"
+      required: true
+      default: 3306
+      type: "int"
+    - variable: "db_scale"
+      description: "Number of mysql nodes. Note: Recommended an odd number"
+      label: "Mysql Nodes:"
+      required: true
+      default: 3
+      type: "int"
+mysql:
+  scale: ${db_scale}

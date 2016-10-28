@@ -1,4 +1,0 @@
-slave:
-  scale: 1
-master:
-  scale: 1
