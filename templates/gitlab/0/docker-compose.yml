@@ -11,9 +11,9 @@ gitlab:
   - /etc/localtime:/etc/localtime
   - ${volumes_work1}:/etc/gitlab
   - ${volumes_work4}:/var/opt/gitlab
-#  - ${volumes_work3}
-#  - ${volumes_work2}
-#  - ${volumes_work5}
+#   - ${volumes_work3}
+#   - ${volumes_work2}
+#   - ${volumes_work5}
   
 #  hostname: ${host_labe}
   tty: true
