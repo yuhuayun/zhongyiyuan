@@ -16,5 +16,11 @@
       required: true
       default: 3
       type: "int"
+    - variable: "db_password"
+      description: "Number of mysql password"
+      label: "Mysql Password:"
+      required: true
+      default: 123456
+      type: "int"
 mysql:
   scale: ${db_scale}
