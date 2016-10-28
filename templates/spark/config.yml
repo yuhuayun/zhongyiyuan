@@ -1,8 +1,8 @@
 name: Apache Spark
 description: |
   (Experimental) Spark cluster
-version: 1.0.0
+version: 2.0.0
 category: Bigdata
 maintainer: "有容云"
-minimum_rancher_version: v1.0
+minimum_rancher_version: v1.59.0
 license:
